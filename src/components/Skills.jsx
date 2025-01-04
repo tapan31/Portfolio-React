@@ -1,34 +1,59 @@
 import SkillsContainer from "./SkillsContainer";
 
+// Import Frontend Skills Images
+import html5Img from "../assets/skills/html5.svg";
+import css3Img from "../assets/skills/css3.svg";
+import javascriptImg from "../assets/skills/javascript.svg";
+import reactImg from "../assets/skills/react.svg";
+import reduxImg from "../assets/skills/redux.svg";
+import nextjsImg from "../assets/skills/nextjs.svg";
+import tailwindcssImg from "../assets/skills/tailwindcss.svg";
+
+// Import Backend Skills Images
+import nodejsImg from "../assets/skills/nodejs.svg";
+import expressjsImg from "../assets/skills/express-js.svg";
+import mongodbImg from "../assets/skills/mongodb.svg";
+import mysqlImg from "../assets/skills/mysql.svg";
+import firebaseImg from "../assets/skills/firebase.svg";
+
+// Import Other Skills Images
+import cppImg from "../assets/skills/cpp.svg";
+import javaImg from "../assets/skills/java.svg";
+import gitImg from "../assets/skills/git.svg";
+import githubImg from "../assets/skills/github.svg";
+import vscodeImg from "../assets/skills/vscode.svg";
+import postmanImg from "../assets/skills/postman.svg";
+import linuxImg from "../assets/skills/linux.svg";
+
+// Frontend Skills
 const frontendSkills = [
-  // Frontend Skills
-  { name: "HTML5", img: "/src/assets/skills/html5.svg" },
-  { name: "CSS", img: "/src/assets/skills/css3.svg" },
-  { name: "JavaScript", img: "/src/assets/skills/javascript.svg" },
-  { name: "React.js", img: "/src/assets/skills/react.svg" },
-  { name: "Redux", img: "/src/assets/skills/redux.svg" },
-  { name: "Next.js", img: "/src/assets/skills/nextjs.svg" },
-  { name: "Tailwind CSS", img: "/src/assets/skills/tailwindcss.svg" },
+  { name: "HTML5", img: html5Img },
+  { name: "CSS", img: css3Img },
+  { name: "JavaScript", img: javascriptImg },
+  { name: "React.js", img: reactImg },
+  { name: "Redux", img: reduxImg },
+  { name: "Next.js", img: nextjsImg },
+  { name: "Tailwind CSS", img: tailwindcssImg },
 ];
 
 // Backend Skills
 const backendSkills = [
-  { name: "Node.js", img: "/src/assets/skills/nodejs.svg" },
-  { name: "Express.js", img: "/src/assets/skills/express-js.svg" },
-  { name: "MongoDB", img: "/src/assets/skills/mongodb.svg" },
-  { name: "MySQL", img: "/src/assets/skills/mysql.svg" },
-  { name: "Firebase", img: "/src/assets/skills/firebase.svg" },
+  { name: "Node.js", img: nodejsImg },
+  { name: "Express.js", img: expressjsImg },
+  { name: "MongoDB", img: mongodbImg },
+  { name: "MySQL", img: mysqlImg },
+  { name: "Firebase", img: firebaseImg },
 ];
 
 // Other Skills
 const otherSkills = [
-  { name: "C++", img: "/src/assets/skills/cpp.svg" },
-  { name: "Java", img: "/src/assets/skills/java.svg" },
-  { name: "Git", img: "/src/assets/skills/git.svg" },
-  { name: "GitHub", img: "/src/assets/skills/github.svg" },
-  { name: "VS Code", img: "/src/assets/skills/vscode.svg" },
-  { name: "Postman", img: "/src/assets/skills/postman.svg" },
-  { name: "Linux", img: "/src/assets/skills/linux.svg" },
+  { name: "C++", img: cppImg },
+  { name: "Java", img: javaImg },
+  { name: "Git", img: gitImg },
+  { name: "GitHub", img: githubImg },
+  { name: "VS Code", img: vscodeImg },
+  { name: "Postman", img: postmanImg },
+  { name: "Linux", img: linuxImg },
 ];
 
 {
