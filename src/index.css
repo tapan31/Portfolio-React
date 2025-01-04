@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  @apply bg-dark-background;
+}
+
+/* 
+  The issue you're facing occurs because the sticky header takes up space at the top of the viewport, causing sections to be hidden behind it when scrolling to them via anchor links. To fix this, you can use CSS to add a scroll padding to the html or body element or adjust the target sections' styles.
+*/
+
+@layer base {
+  html {
+    font-family: "Poppins", system-ui, serif;
+    scroll-behavior: smooth;
+    scroll-padding: 5rem; /* This ensures that the browser scrolls sections with enough space to account for the sticky header. */
+    background-color: #f9f9f9;
+  }
+}
+
+/* Particles Container */
+.particles-container {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+  z-index: -100 !important;
+}
+
+/* Swiper js */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Light mode styles */
+.custom-pagination .swiper-pagination-bullet {
+  background-color: #d1d5db; /* gray-300 for inactive bullets */
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #3b82f6; /* blue-500 for active bullet */
+}
+
+/* Dark mode styles */
+.dark .custom-pagination .swiper-pagination-bullet {
+  background-color: #4b5563; /* gray-600 for inactive bullets */
+}
+
+.dark .custom-pagination .swiper-pagination-bullet-active {
+  /* background-color: #60a5fa; blue-400 for active bullet */
+  background-color: #3b82f6; /* blue-400 for active bullet */
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    scroll-padding: 14rem;
+  }
+}
