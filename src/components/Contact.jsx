@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 import Form from "./Form";
 
 const resumeLink =
-  "https://drive.google.com/file/d/1V0ktM0s2Q0P4cnGOJT6cxhf7mv7lo4Gu/view?usp=sharing";
+  "https://drive.google.com/file/d/1_kSn_j2zeAitl4Xzqp1_qORNAvCdT-Bv/view?usp=sharing";
 
 export default function Contact() {
   return (
