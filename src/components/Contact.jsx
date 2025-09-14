@@ -26,13 +26,13 @@ export default function Contact() {
             linkStyles="hover:text-button-hover"
           />
 
-          <a
+{/*           <a
             href={resumeLink}
             target="_blank"
             className="inline-block rounded-lg bg-primary p-2 text-sm font-medium text-white hover:bg-button-hover"
           >
             Download CV
-          </a>
+          </a> */}
 
           <Lottie
             animationData={contact}
